@@ -13,8 +13,13 @@ body {
   margin: 0px;
   font-family: 'Arial', sans-serif;
   color: #25274d;
+
+}
+
+main {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 address {
@@ -36,9 +41,16 @@ p {
 
 .footer {
   padding: 10px 30px 10px 40px;
+  flex-grow: 1;
   flex-shrink: 0;
+  flex-basis: auto;
   background-color: #24292e;
   color: #f1f1f1;
+  /*
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  */
 }
 
 .topBtnParent{
@@ -46,10 +58,12 @@ p {
 }
 
 .content {
-  flex: 1 0 auto;
-  padding: 0px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  padding: 0px 20px 0px 20px;
   position: relative;
-  top: 40px;
+  top: 60px;
   margin-top: 0px
 }
 
@@ -208,7 +222,7 @@ p {
 }
 
 #nameTitle {
-  font-size:2.5em;
+  font-size: 3em;
   flex-grow: 1;
   font-variant: small-caps;
   padding: 0px 0px 0px 10px;
