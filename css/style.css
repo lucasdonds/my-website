@@ -31,14 +31,6 @@ p {
   text-align: justify;
 }
 
-.slideshowPic  {
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-
 .footer {
   padding: 10px 30px 10px 40px;
   flex-grow: 1;
@@ -140,6 +132,13 @@ p {
   display: none;
 }
 
+.slideshowPic  {
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -176,17 +175,6 @@ p {
   bottom: 8px;
   width: 100%;
   text-align: center;
-}
-
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }
 
 #dropbtn {
