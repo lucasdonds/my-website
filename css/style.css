@@ -16,12 +16,6 @@ body {
 
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 address {
   text-align: center;
   margin: 0px;
@@ -29,6 +23,11 @@ address {
 
 p {
   text-align: justify;
+  padding: 0px 20px 0px 20px;
+}
+
+h3 {
+  padding: 0px 20px 0px 20px;
 }
 
 .footer {
@@ -38,22 +37,13 @@ p {
   flex-basis: auto;
   background-color: #24292e;
   color: #f1f1f1;
-  /*
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  */
-}
-
-.topBtnParent{
-  padding-right: 5%;
 }
 
 .content {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 0px 0px 0px;
   position: relative;
   top: 60px;
   margin-top: 0px
@@ -163,7 +153,7 @@ p {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: white;
 }
 
 /* Caption text */
@@ -177,6 +167,10 @@ p {
   text-align: center;
 }
 
+.topBtnParent {
+  padding: 0px 20%;
+}
+
 #dropbtn {
  padding: 0px;
  border: none;
@@ -184,21 +178,16 @@ p {
 }
 
 #topBtn {
-  padding-right: 5%;
-  display: none; /* Hidden by default */
-  margin: 0px 0px 0px 0px;
-  z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: green; /* Set a background color */
-  color: #f1f1f1; /* Text color */
+  background-color: lightblue; /* Set a background color */
+  color: #24292e; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 0px; /* Some padding */
   border-radius: 5px; /* Rounded corners */
-  font-size: 1em; /* Increase font size */
+  font-size: 2em; /* Increase font size */
   align-self: center;
   width: 100%;
-  transition: 1.5s;
+  transition: ;
 }
 #topBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
